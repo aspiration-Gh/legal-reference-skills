@@ -1,0 +1,9 @@
+*.pdf
+*.log
+*.jsonl
+.env
+.env.*
+__pycache__/
+*installation-report*
+*batch-*
+*audit-*

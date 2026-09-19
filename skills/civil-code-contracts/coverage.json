@@ -1,0 +1,248 @@
+{
+  "skill": "civil-code-contracts",
+  "source_pdf_pages": 2905,
+  "module_count": 30,
+  "chapters": [
+    {
+      "id": "ch00",
+      "file": "chapters/ch00.md",
+      "title": "绪论：《民法典》编纂概述",
+      "start_pdf_page": 32,
+      "end_pdf_page": 45,
+      "sha256": "8c0ba07ce622a82b5a902f9efbea17e4b653a060bef2b85010cb07c896adaaf8"
+    },
+    {
+      "id": "ch01",
+      "file": "chapters/ch01.md",
+      "title": "一般规定",
+      "start_pdf_page": 47,
+      "end_pdf_page": 81,
+      "sha256": "1dfaddfd097e8d0c9e6665c38ae63c8ab82d82f5377f136c816a980e81ec52c2"
+    },
+    {
+      "id": "ch02",
+      "file": "chapters/ch02.md",
+      "title": "合同的订立",
+      "start_pdf_page": 82,
+      "end_pdf_page": 316,
+      "sha256": "390657ae353705dc12029f7bb398d6bed8121697fb125b23784f70be1132392c"
+    },
+    {
+      "id": "ch03",
+      "file": "chapters/ch03.md",
+      "title": "合同的效力",
+      "start_pdf_page": 317,
+      "end_pdf_page": 367,
+      "sha256": "3980ba36d6e296172183677e58c459cc77266aafd7de76a3b7ece613d8dae3d3"
+    },
+    {
+      "id": "ch04",
+      "file": "chapters/ch04.md",
+      "title": "合同的履行",
+      "start_pdf_page": 368,
+      "end_pdf_page": 526,
+      "sha256": "fac80414ebfb81f83be1bebb8854654d9c6ab8af988309234092279f182c1ead"
+    },
+    {
+      "id": "ch05",
+      "file": "chapters/ch05.md",
+      "title": "合同的保全",
+      "start_pdf_page": 527,
+      "end_pdf_page": 584,
+      "sha256": "fb8b2cc63b5fcfa1f42f83a2e2110abf0b7cf6cb5885c490400c7bc7114bec0c"
+    },
+    {
+      "id": "ch06",
+      "file": "chapters/ch06.md",
+      "title": "合同的变更和转让",
+      "start_pdf_page": 585,
+      "end_pdf_page": 623,
+      "sha256": "391cbb4940a9fc11aedb6f23041a194a75b4c4795ee73fd719f11f2ab0a06ad9"
+    },
+    {
+      "id": "ch07",
+      "file": "chapters/ch07.md",
+      "title": "合同的权利义务终止",
+      "start_pdf_page": 624,
+      "end_pdf_page": 741,
+      "sha256": "004ef1ede605e08464f72595131f47e94ad1fabe1538246032f5df5ba927691b"
+    },
+    {
+      "id": "ch08",
+      "file": "chapters/ch08.md",
+      "title": "违约责任",
+      "start_pdf_page": 763,
+      "end_pdf_page": 899,
+      "sha256": "faf143419d1c99d5b52823eaacac38263b1d03611ca072789af55750719c5a19"
+    },
+    {
+      "id": "ch09",
+      "file": "chapters/ch09.md",
+      "title": "买卖合同",
+      "start_pdf_page": 901,
+      "end_pdf_page": 1183,
+      "sha256": "a57ddc07fa9048584c7b0a4582230942b2cb977f72aa58db910508223fc24079"
+    },
+    {
+      "id": "ch10",
+      "file": "chapters/ch10.md",
+      "title": "供用电、水、气、热力合同",
+      "start_pdf_page": 1184,
+      "end_pdf_page": 1217,
+      "sha256": "647233692f934b81274411c1ad8ab674bf817867c65de2a9d1c135f295eeccb8"
+    },
+    {
+      "id": "ch11",
+      "file": "chapters/ch11.md",
+      "title": "赠与合同",
+      "start_pdf_page": 1218,
+      "end_pdf_page": 1265,
+      "sha256": "251b1a03c5affab497a0a6967a4698a53f6a0a5a697df611a6dbc3d1a1727e71"
+    },
+    {
+      "id": "ch12",
+      "file": "chapters/ch12.md",
+      "title": "借款合同",
+      "start_pdf_page": 1266,
+      "end_pdf_page": 1327,
+      "sha256": "276a8ca52b345277419e66e47544b3a575b19e2ccf3758820cb0167634355d2d"
+    },
+    {
+      "id": "ch13",
+      "file": "chapters/ch13.md",
+      "title": "保证合同",
+      "start_pdf_page": 1328,
+      "end_pdf_page": 1454,
+      "sha256": "5147546ed8250677853c55ce52aaf854bdd7513bf9140f1203643141a7a9b18d"
+    },
+    {
+      "id": "ch14",
+      "file": "chapters/ch14.md",
+      "title": "租赁合同",
+      "start_pdf_page": 1471,
+      "end_pdf_page": 1673,
+      "sha256": "7623b2e7dfe7604e768f9896e6d5b549e53cb8014627274282f7470be1419cac"
+    },
+    {
+      "id": "ch15",
+      "file": "chapters/ch15.md",
+      "title": "融资租赁合同",
+      "start_pdf_page": 1674,
+      "end_pdf_page": 1822,
+      "sha256": "93c46d259b0ebe03a4e4a55372e5107605cf7b20d876f56af3536859312d46e7"
+    },
+    {
+      "id": "ch16",
+      "file": "chapters/ch16.md",
+      "title": "保理合同",
+      "start_pdf_page": 1823,
+      "end_pdf_page": 1857,
+      "sha256": "bf6975547952b320f2462addae99683042edde83e183896af44ed0a38e6a7ba5"
+    },
+    {
+      "id": "ch17",
+      "file": "chapters/ch17.md",
+      "title": "承揽合同",
+      "start_pdf_page": 1858,
+      "end_pdf_page": 1964,
+      "sha256": "4b7c8de6643dc397db4f756740c0ed8a312ee800bba560c54b410805624d4637"
+    },
+    {
+      "id": "ch18",
+      "file": "chapters/ch18.md",
+      "title": "建设工程合同",
+      "start_pdf_page": 1965,
+      "end_pdf_page": 2109,
+      "sha256": "c878fb78125937c0507b2e84aaf6cfaf805d6f8607c1c65de9288b5fedb89019"
+    },
+    {
+      "id": "ch19",
+      "file": "chapters/ch19.md",
+      "title": "运输合同",
+      "start_pdf_page": 2139,
+      "end_pdf_page": 2319,
+      "sha256": "a634f015774ca8edd42cfc8f7964ccfbc57b85f59f72a7e2de18d5120d1922af"
+    },
+    {
+      "id": "ch20",
+      "file": "chapters/ch20.md",
+      "title": "技术合同",
+      "start_pdf_page": 2320,
+      "end_pdf_page": 2435,
+      "sha256": "e88d93d17d9f9e9ce62b00054691b94deca23d990cbd847914b3a2378f216505"
+    },
+    {
+      "id": "ch21",
+      "file": "chapters/ch21.md",
+      "title": "保管合同",
+      "start_pdf_page": 2436,
+      "end_pdf_page": 2477,
+      "sha256": "b636697b33aed9d7cbcd1718c22eb50b0f54adcb7ab5f27f855d6cc11004ed50"
+    },
+    {
+      "id": "ch22",
+      "file": "chapters/ch22.md",
+      "title": "仓储合同",
+      "start_pdf_page": 2478,
+      "end_pdf_page": 2559,
+      "sha256": "c7ab9d734162eea83f31d12de5bb4c30f76371c76d24794581fcc92a1d066f96"
+    },
+    {
+      "id": "ch23",
+      "file": "chapters/ch23.md",
+      "title": "委托合同",
+      "start_pdf_page": 2560,
+      "end_pdf_page": 2642,
+      "sha256": "c1b171ab36c133300ccbf97178ac711f5fb63d33b4195c0e50ae8e315c0e481e"
+    },
+    {
+      "id": "ch24",
+      "file": "chapters/ch24.md",
+      "title": "物业服务合同",
+      "start_pdf_page": 2643,
+      "end_pdf_page": 2747,
+      "sha256": "8373314ea74f623f389a421dad9d68e5bc71bec513d4edf4b8856f361e21589e"
+    },
+    {
+      "id": "ch25",
+      "file": "chapters/ch25.md",
+      "title": "行纪合同",
+      "start_pdf_page": 2748,
+      "end_pdf_page": 2797,
+      "sha256": "abfe5311bfded7c20db426b1cf7db0946def367b3af33287c0f4496b7b67deb0"
+    },
+    {
+      "id": "ch26",
+      "file": "chapters/ch26.md",
+      "title": "中介合同",
+      "start_pdf_page": 2798,
+      "end_pdf_page": 2823,
+      "sha256": "85c821c6991d4d2300a1d6d40dbaf24122d06b971ef27d79fd42a41b0b868052"
+    },
+    {
+      "id": "ch27",
+      "file": "chapters/ch27.md",
+      "title": "合伙合同",
+      "start_pdf_page": 2824,
+      "end_pdf_page": 2863,
+      "sha256": "e303177aa5cfc41c52bf67029c8642b6bddd5677df7e18a8ce750f62e72aa753"
+    },
+    {
+      "id": "ch28",
+      "file": "chapters/ch28.md",
+      "title": "无因管理",
+      "start_pdf_page": 2865,
+      "end_pdf_page": 2886,
+      "sha256": "7cadd83dd136cdb8d8a53d591a498370fb46205864f3bbdbad7b33d3bb917470"
+    },
+    {
+      "id": "ch29",
+      "file": "chapters/ch29.md",
+      "title": "不当得利",
+      "start_pdf_page": 2887,
+      "end_pdf_page": 2902,
+      "sha256": "d58869e5e3da277ab2e9382017041574fb4b43021fdc48c40c45a9236e58e59c"
+    }
+  ],
+  "scope": "Public navigation inventory, not proof of exhaustive legal correctness. Original PDFs, extracted text and internal logs are not distributed."
+}
