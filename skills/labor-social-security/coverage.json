@@ -1,0 +1,317 @@
+{
+  "skill": "labor-social-security",
+  "source_book_short_title": "劳动和社会保障法律法规全书",
+  "edition": "2022年版；2021年12月第8版",
+  "isbn": "978-7-5216-1794-8",
+  "source_pdf_pages": 855,
+  "body_text_pages": 843,
+  "module_count": 30,
+  "limits": [
+    "Page coverage records the assigned text layers read by the batches and independently verified source hashes; it does not certify every OCR character or legal interpretation.",
+    "Front matter was inspected for bibliography and structure, not synthesized as substantive modules.",
+    "Embedded image supplements and remaining table uncertainties are recorded in internal audits; not every image cell was independently checked.",
+    "Some modules include dated official-source spot checks, not a complete current-law update."
+  ],
+  "chapters": [
+    {
+      "id": "ch01",
+      "title": "ch01 行政行为审查、复议诉讼与公权赔偿",
+      "file": "chapters/ch01.md",
+      "batch_page_range": [
+        13,
+        121
+      ],
+      "sha256": "12f1c2abca60592993d76fa73b0f990a0cecd2306a0509ddc83fb39889834791"
+    },
+    {
+      "id": "ch02",
+      "title": "ch02 劳动关系基础、用工责任、工资税务与监察",
+      "file": "chapters/ch02.md",
+      "batch_page_range": [
+        13,
+        121
+      ],
+      "sha256": "98b20c10d5f1b45227bfe3fc81c61ea95d707a4985d35f47ec8176995706351d"
+    },
+    {
+      "id": "ch03",
+      "title": "ch03 工会组织、民主管理、劳动监督与集体协商",
+      "file": "chapters/ch03.md",
+      "batch_page_range": [
+        13,
+        121
+      ],
+      "sha256": "8247bcc5c46c0f8b10ddc57dad3fc1dfc000403460bce25e41493ba767d71831"
+    },
+    {
+      "id": "ch04",
+      "title": "实务模块04｜就业促进、就业服务与人力资源市场",
+      "file": "chapters/ch04.md",
+      "batch_page_range": [
+        122,
+        213
+      ],
+      "sha256": "39b49e735643bf090b2e36f2eba9c00ce2156e5074e687915da1b489b173d2e2"
+    },
+    {
+      "id": "ch05",
+      "title": "实务模块05｜职业培训、学徒制与合作办学",
+      "file": "chapters/ch05.md",
+      "batch_page_range": [
+        122,
+        213
+      ],
+      "sha256": "8bc327db0fdda0e1bb00ff75ac0ccd965dd88d5c3f6cec07057c943169ac926f"
+    },
+    {
+      "id": "ch06",
+      "title": "实务模块06｜残疾人就业、再就业与跨境就业",
+      "file": "chapters/ch06.md",
+      "batch_page_range": [
+        122,
+        213
+      ],
+      "sha256": "fcfc965570441896e1e663a887b15486537045327b3d2dde6c446414d17671a9"
+    },
+    {
+      "id": "ch07",
+      "title": "ch07 劳动合同订立、履行、退出与证据审查",
+      "file": "chapters/ch07.md",
+      "batch_page_range": [
+        214,
+        295
+      ],
+      "sha256": "5710d0df682d98b5cb97f0ad57499fa293fb97a6888e02fbf0a52286db4474ff"
+    },
+    {
+      "id": "ch08",
+      "title": "ch08 派遣、集体协商与非全日制用工",
+      "file": "chapters/ch08.md",
+      "batch_page_range": [
+        214,
+        295
+      ],
+      "sha256": "a363c28075fa15ac9858364253006e9ed972175bf34438899041ad093bd06a11"
+    },
+    {
+      "id": "ch09",
+      "title": "ch09 工资计算、欠薪清偿与工程工资保障",
+      "file": "chapters/ch09.md",
+      "batch_page_range": [
+        214,
+        295
+      ],
+      "sha256": "07229526dd3aa64494d2aa3d06d5d70bbb574394d2222636967eced54a46b119"
+    },
+    {
+      "id": "ch10",
+      "title": "实务模块10：工时、休假与医疗期",
+      "file": "chapters/ch10.md",
+      "batch_page_range": [
+        296,
+        405
+      ],
+      "sha256": "8ff7ea9443b6c8d3495d3fe4b9487ad0a919b004ae094f06f1cccfe3b437eecf"
+    },
+    {
+      "id": "ch11",
+      "title": "实务模块11：安全生产责任、行业控制与事故处理",
+      "file": "chapters/ch11.md",
+      "batch_page_range": [
+        296,
+        405
+      ],
+      "sha256": "b40b95f740508e1045923c760f4bab7160bf022a5022391eb6b72b54e443a080"
+    },
+    {
+      "id": "ch12",
+      "title": "实务模块12：职业病防治、劳动防护用品与职业健康监护",
+      "file": "chapters/ch12.md",
+      "batch_page_range": [
+        296,
+        405
+      ],
+      "sha256": "b9141c69627f2dd225f9c8622b9e95dd44b941941ccaa253095d17dfe7fa2803"
+    },
+    {
+      "id": "ch13",
+      "title": "ch13 女职工、童工与未成年工特殊保护",
+      "file": "chapters/ch13.md",
+      "batch_page_range": [
+        406,
+        456
+      ],
+      "sha256": "db07a2216b63fdb0ce29c8dff8eee22c2c9a7e566dfb1e4eb3d84c7e53fd33ed"
+    },
+    {
+      "id": "ch14",
+      "title": "ch14 劳动人事争议：协商、调解与仲裁程序",
+      "file": "chapters/ch14.md",
+      "batch_page_range": [
+        406,
+        456
+      ],
+      "sha256": "a8485d35b6ecd976d1c22d4b0217c1f19e8307e88528800497094aeb58c2a1ba"
+    },
+    {
+      "id": "ch15",
+      "title": "ch15 裁审衔接、欠薪刑责与典型案例判断",
+      "file": "chapters/ch15.md",
+      "batch_page_range": [
+        406,
+        456
+      ],
+      "sha256": "afbb6df076d86000a36bba84f424aae08d9cfa341c5ad175e89d2761a5684ccf"
+    },
+    {
+      "id": "ch16",
+      "title": "ch16 人事综合：身份、处分、退役安置与人事争议",
+      "file": "chapters/ch16.md",
+      "batch_page_range": [
+        457,
+        539
+      ],
+      "sha256": "09398b2228e95da421ff6b462e0be5ca8cf64e21f0206508590b3d4432f326b3"
+    },
+    {
+      "id": "ch17",
+      "title": "ch17 公务员管理：范围、录用、考察、违规处理与公开遴选",
+      "file": "chapters/ch17.md",
+      "batch_page_range": [
+        457,
+        539
+      ],
+      "sha256": "4e571ac815cc3c2f5fcb50667750d3a56407bbfe0654f9f8b6dcba7fa3045520"
+    },
+    {
+      "id": "ch18",
+      "title": "ch18 公务员管理：申诉、考核、职级、退出与分类管理",
+      "file": "chapters/ch18.md",
+      "batch_page_range": [
+        457,
+        539
+      ],
+      "sha256": "d5e154a0412eb0b333acf1f5380d0fdb9d9dd94a545a65436b67852d6fb987dc"
+    },
+    {
+      "id": "ch19",
+      "title": "实务模块19：事业单位身份、招聘、岗位与聘用合同",
+      "file": "chapters/ch19.md",
+      "batch_page_range": [
+        540,
+        601
+      ],
+      "sha256": "43980a725159bf447aa55e807bd257b36defa3470d31727285eac5520950c9a3"
+    },
+    {
+      "id": "ch20",
+      "title": "实务模块20：事业单位考核奖惩、申诉与人事争议",
+      "file": "chapters/ch20.md",
+      "batch_page_range": [
+        540,
+        601
+      ],
+      "sha256": "72b5f36f8844f0d18cb5d1a2fc05291d988701b461a72e70a79d4546ee7d666d"
+    },
+    {
+      "id": "ch21",
+      "title": "实务模块21：专业技术与技能人才评价、继续教育和待遇",
+      "file": "chapters/ch21.md",
+      "batch_page_range": [
+        540,
+        601
+      ],
+      "sha256": "d986e9cb3e36f61c43b29b2f890aaa958df4f783f26ebb5d2e01518e9950bcb1"
+    },
+    {
+      "id": "ch22",
+      "title": "ch22 社会保险综合：参保征缴、经办数据、基金监督与救济",
+      "file": "chapters/ch22.md",
+      "batch_page_range": [
+        602,
+        694
+      ],
+      "sha256": "fbf7eac1d1654dd5880b8a8f812a2603f2145f7bfa9142dfad3a954ed1241c07"
+    },
+    {
+      "id": "ch23",
+      "title": "ch23 救助与住房公积金：资格、家庭核算、程序和追缴",
+      "file": "chapters/ch23.md",
+      "batch_page_range": [
+        602,
+        694
+      ],
+      "sha256": "ee391031b1e96a9acb0b084accf88d76165454c34db19403a747dc15c836ebf0"
+    },
+    {
+      "id": "ch24",
+      "title": "ch24 养老保险、年金与跨省迁移实务",
+      "file": "chapters/ch24.md",
+      "batch_page_range": [
+        602,
+        694
+      ],
+      "sha256": "29e7f6c79ee0b31109e7077e3944fc1cdfbdc461b0f4cd51e6fc1cdac352759e"
+    },
+    {
+      "id": "ch25",
+      "title": "实务模块25｜医疗保险参保、待遇边界与基金监督",
+      "file": "chapters/ch25.md",
+      "batch_page_range": [
+        695,
+        823
+      ],
+      "sha256": "b1b854a183e89d481375b764962a71f328954f7eef42b52a12348e623af9d69d"
+    },
+    {
+      "id": "ch26",
+      "title": "实务模块26｜工伤保险责任、认定与行政救济",
+      "file": "chapters/ch26.md",
+      "batch_page_range": [
+        695,
+        823
+      ],
+      "sha256": "32710a06b0b92048f467b01057c8b2f5d12c2edd1ecedc7f1faddc4a9e8dc8ec"
+    },
+    {
+      "id": "ch27",
+      "title": "实务模块27｜职业病诊断、劳动能力鉴定与工伤待遇",
+      "file": "chapters/ch27.md",
+      "batch_page_range": [
+        695,
+        823
+      ],
+      "sha256": "1146546e80612faa15070fd3cd23f8185f7d7f69cca6a3d65f4c441f120b7d76"
+    },
+    {
+      "id": "ch28",
+      "title": "ch28 失业保险：身份、离职原因、待遇与转移",
+      "file": "chapters/ch28.md",
+      "batch_page_range": [
+        824,
+        855
+      ],
+      "sha256": "ba5275d9688c852391208895e865da9ee361b8aea8da8a63921d25ceb2d0cc1f"
+    },
+    {
+      "id": "ch29",
+      "title": "ch29 生育保险、产育支持与待遇衔接",
+      "file": "chapters/ch29.md",
+      "batch_page_range": [
+        824,
+        855
+      ],
+      "sha256": "b4bae97636430b868fe14ce2aacc7b8da9964de9787df636e206f7fa9ff0bff6"
+    },
+    {
+      "id": "ch30",
+      "title": "ch30 代表建议答复：检索线索、解释立场与政策边界",
+      "file": "chapters/ch30.md",
+      "batch_page_range": [
+        824,
+        855
+      ],
+      "sha256": "8002f67e42debb94d6ff3c01534bd1b7214fd59521be712e38fa03332a81503f"
+    }
+  ]
+}

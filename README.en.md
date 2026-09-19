@@ -2,7 +2,7 @@
 
 # Legal Reference Skills
 
-**Two on-demand skills for contract review, data compliance, and structured analysis**
+**Three on-demand skills for contracts, data compliance, and employment law**
 
 [简体中文](README.md) · English
 
@@ -10,7 +10,7 @@
 
 </div>
 
-Structured reading notes from two legal reference books: decision steps, conditions and exceptions, evidence prompts, source page references, and chapter navigation. Use them to frame a question, then verify the applicable official rules.
+Structured reading notes from three legal reference books: decision steps, conditions and exceptions, evidence prompts, source page references, and chapter navigation. Use them to frame a question, then verify the applicable official rules.
 
 <a id="skills"></a>
 ## Skills
@@ -19,8 +19,9 @@ Structured reading notes from two legal reference books: decision steps, conditi
 |---|---|---|
 | [`civil-code-contracts`](skills/civil-code-contracts/SKILL.md) | Formation, validity, performance, termination, remedies, and specific contract types | Introduction plus 29 chapters: 30 files |
 | [`cyber-data-law`](skills/cyber-data-law/SKILL.md) | Network security, data processing, personal information, appendix rules, and cross-topic analysis | 28 modules |
+| [`labor-social-security`](skills/labor-social-security/SKILL.md) | Employment contracts, pay, working time, personnel disputes, insurance, and assistance | 30 modules |
 
-Each skill contains `SKILL.md`, `chapters/`, `glossary.md`, `patterns.md`, `cheatsheet.md`, `sources.md`, and a public `coverage.json` inventory. The skills refer to one another for data-processing agreements, technical outsourcing, and related questions.
+Each skill contains `SKILL.md`, `chapters/`, `glossary.md`, `patterns.md`, `cheatsheet.md`, `sources.md`, and a public `coverage.json` inventory. The skills can be combined for data-processing agreements, outsourcing, recruitment, and employment questions.
 
 The skill bodies are written in Simplified Mandarin. Bilingual READMEs do not imply that all chapters have been translated.
 
@@ -29,14 +30,17 @@ The skill bodies are written in Simplified Mandarin. Bilingual READMEs do not im
 
 ### Hermes Agent
 
-Copy both directories under `skills/` into the **active profile's** `${HERMES_HOME}/skills/law/`. If `HERMES_HOME` is unset, the default is `~/.hermes/skills/law/`. Back up or compare an existing skill with the same name before replacing it.
+Copy all three directories under `skills/` into the **active profile's** `${HERMES_HOME}/skills/law/`. If `HERMES_HOME` is unset, the default is `~/.hermes/skills/law/`. Back up or compare an existing skill with the same name before replacing it.
 
 ```text
 <HERMES_HOME>/skills/law/
 ├── civil-code-contracts/
 │   ├── SKILL.md
 │   └── ...
-└── cyber-data-law/
+├── cyber-data-law/
+│   ├── SKILL.md
+│   └── ...
+└── labor-social-security/
     ├── SKILL.md
     └── ...
 ```
@@ -53,13 +57,13 @@ from pathlib import Path
 source = Path('legal-reference-skills/skills')
 home = Path(os.environ.get('HERMES_HOME', str(Path.home() / '.hermes')))
 target = home / 'skills' / 'law'
-names = ('civil-code-contracts', 'cyber-data-law')
+names = ('civil-code-contracts', 'cyber-data-law', 'labor-social-security')
 for name in names:
     if (target / name).exists():
         raise SystemExit(f'Already exists: {target / name}')
 for name in names:
     shutil.copytree(source / name, target / name)
-print('Installed both skills.')
+print('Installed all three skills.')
 PY
 ```
 
@@ -71,6 +75,16 @@ Copy each complete skill directory into a supported skill location, preserving r
 
 <a id="usage"></a>
 ## Usage examples
+
+English identifiers remain stable. Use these natural-language aliases to request the relevant skill; they are routing cues, not separate installed skills.
+
+| Call name | Identifier | Scope |
+|---|---|---|
+| 民法典 | `civil-code-contracts` | Contract provisions only, not the entire code |
+| 网安相关法律 | `cyber-data-law` | Network security, data, and personal information |
+| 劳动法 | `labor-social-security` | Employment, personnel, and social security |
+
+Example: “调用劳动法 — analyze this termination notice, identify missing evidence, then verify the applicable rules.”
 
 ```text
 Use civil-code-contracts to review this service agreement.
@@ -107,7 +121,7 @@ flowchart LR
 | Benefit | Mechanism | Current limit |
 |---|---|---|
 | Topic-oriented reference | Chapter index, glossary, and decision tables | Depends on assistant behavior; not a standalone search service |
-| Cross-topic analysis | Reciprocal skill references | Both skills must be discoverable by the host |
+| Cross-topic analysis | Topic routing and skill references | Relevant skills must be discoverable by the host |
 | Source traceability | Chapters and source PDF page numbers | Books are not distributed; pagination may differ by edition |
 | Historical-rule awareness | Date-sensitive official verification instructions | A workflow requirement, not an automatically updated database |
 
@@ -115,17 +129,31 @@ There is no background service, account binding, or API-key configuration. Offic
 
 ## Validation
 
-Public-copy checks cover file completeness, relative links, an inventory of 58 chapters/modules, public-file hashes, privacy-pattern screening, entry-point format, and known injection-pattern scanning. Discovery and supporting-file loading were verified for the original installed skills in Hermes; the public copy changes the identifiers and source documentation.
+Public-copy checks cover file completeness, relative links, an inventory of 88 chapters/modules, public-file hashes, privacy-pattern screening, entry-point format, and known injection-pattern scanning. Discovery and supporting-file loading were verified for the original installed skills in Hermes; the public copy changes the identifiers and source documentation.
 
 These checks do not certify exhaustive OCR accuracy or legal correctness. Internal production logs, installation records, machine paths, credentials, and extracted source texts are not distributed.
 
 <a id="sources"></a>
 ## Sources and limits
 
+**Book-source code: `Z-library`**
+
+The following titles, formats, and sizes are provider-supplied bibliographic search markers, reproduced as specified. Platform listings and availability have not been verified. They do not describe the actual conversion inputs: all three skills were built from supplied PDF copies, and EPUB pagination may differ.
+
+| Skill alias | Original title | Format | Listed size |
+|---|---|---|---|
+| 劳动法 | 中华人民共和国劳动和社会保障法律法规全书：含全部规章及法律解释：2022年版 | EPUB | 14.22MB |
+| 网安相关法律 | 网络安全法、数据安全法、个人信息保护法一本通 | EPUB | 603KB |
+| 民法典 | 中华人民共和国民法典合同编理解与适用 | PDF | 370.19MB |
+
+The marker includes no download link and makes no copyright or redistribution-license claim. Check lawful access and permitted use for any copy you obtain.
+
+- Employment and social-security reference: 2022 edition, eighth edition published in December 2021; ISBN `978-7-5216-1794-8`. See [employment-law sources](skills/labor-social-security/sources.md).
+
 - 《民法典合同编理解与适用》 (abbreviated title; a reference on the Civil Code contract provisions): People's Court Press; postscript dated 2020-07-15, exact edition unconfirmed. See [contract sources](skills/civil-code-contracts/sources.md).
 - 《网络安全法、数据安全法、个人信息保护法一本通》 (a reference on network security, data security, and personal information rules): first edition, October 2021; ISBN `978-7-5216-2233-1`. See [data-compliance sources](skills/cyber-data-law/sources.md).
 
-**Neither source-book PDF is uploaded or provided here.** Obtain a lawful edition through a bookstore or library. This public copy uses abbreviated titles and institution names and omits country names. This does not change the territorial scope of the original rules or make them universally applicable. Confirm full titles, editions, and jurisdiction before citation or practical use.
+This repository currently provides no source-book files or download links. Full titles requested below are retained as bibliographic identifiers; skill bodies continue to use neutral abbreviations. This does not alter territorial scope or make the rules universally applicable. Confirm titles, editions, and jurisdiction before practical use.
 
 Historical rules, interpretive disagreements, and OCR uncertainties remain marked. This is not a comprehensive update to current law. For real matters, verify applicable legislation, judicial interpretations, effective dates, repeals, and transitional arrangements. The material is not individualized legal advice.
 

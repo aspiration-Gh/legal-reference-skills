@@ -2,7 +2,7 @@
 
 # Legal Reference Skills
 
-**面向合同审查、数据合规与问题分析的两个按需加载技能**
+**面向合同审查、数据合规与劳动社保的三个按需加载技能**
 
 简体中文 · [English](README.en.md)
 
@@ -10,17 +10,18 @@
 
 </div>
 
-将两部法律参考书整理成可供智能助手按问题查阅的知识结构：判断步骤、条件与例外、证据提示、来源页码和章节索引。适合先建立分析框架，再核验适用的官方法条。
+将三部法律参考书整理成可供智能助手按问题查阅的知识结构：判断步骤、条件与例外、证据提示、来源页码和章节索引。适合先建立分析框架，再核验适用的官方法条。
 
 <a id="skills"></a>
-## 两个技能
+## 三个技能
 
 | 技能 | 内容 | 结构 |
 |---|---|---|
 | [`civil-code-contracts`](skills/civil-code-contracts/SKILL.md) | 合同订立与效力、履行、解除、违约救济及典型合同 | 绪论＋29章，共30篇 |
 | [`cyber-data-law`](skills/cyber-data-law/SKILL.md) | 网络安全、数据处理、个人信息、附录规则与交叉分析 | 28个模块 |
+| [`labor-social-security`](skills/labor-social-security/SKILL.md) | 劳动合同、工资工时、人事争议、社会保险与救助 | 30个模块 |
 
-每个技能均包含 `SKILL.md`、`chapters/`、`glossary.md`、`patterns.md`、`cheatsheet.md`、`sources.md` 和公开覆盖清单 `coverage.json`。两个技能在数据处理协议、技术外包等场景下相互引用。
+每个技能均包含 `SKILL.md`、`chapters/`、`glossary.md`、`patterns.md`、`cheatsheet.md`、`sources.md` 和公开覆盖清单 `coverage.json`。三个技能可在数据处理协议、技术外包、招聘与用工等场景下联合使用。
 
 正文以中文编写；双语 README 不代表全部技能正文已经翻译。
 
@@ -29,14 +30,17 @@
 
 ### Hermes Agent
 
-将 `skills/` 中的两个目录复制到**当前配置档**的 `${HERMES_HOME}/skills/law/` 下。若未设置 `HERMES_HOME`，默认路径为 `~/.hermes/skills/law/`。遇到同名技能先备份或比较，不直接覆盖。
+将 `skills/` 中的三个目录复制到**当前配置档**的 `${HERMES_HOME}/skills/law/` 下。若未设置 `HERMES_HOME`，默认路径为 `~/.hermes/skills/law/`。遇到同名技能先备份或比较，不直接覆盖。
 
 ```text
 <HERMES_HOME>/skills/law/
 ├── civil-code-contracts/
 │   ├── SKILL.md
 │   └── ...
-└── cyber-data-law/
+├── cyber-data-law/
+│   ├── SKILL.md
+│   └── ...
+└── labor-social-security/
     ├── SKILL.md
     └── ...
 ```
@@ -53,13 +57,13 @@ from pathlib import Path
 source = Path('legal-reference-skills/skills')
 home = Path(os.environ.get('HERMES_HOME', str(Path.home() / '.hermes')))
 target = home / 'skills' / 'law'
-names = ('civil-code-contracts', 'cyber-data-law')
+names = ('civil-code-contracts', 'cyber-data-law', 'labor-social-security')
 for name in names:
     if (target / name).exists():
         raise SystemExit(f'Already exists: {target / name}')
 for name in names:
     shutil.copytree(source / name, target / name)
-print('Installed both skills.')
+print('Installed all three skills.')
 PY
 ```
 
@@ -71,6 +75,16 @@ Windows 也可通过文件管理器完成复制。新会话中让助手列出 `l
 
 <a id="usage"></a>
 ## 使用示例
+
+英文标识保持稳定，直接用以下中文名称即可触发对应技能（自然语言匹配，不是另建同名技能）：
+
+| 调用名称 | 英文标识 | 范围 |
+|---|---|---|
+| 民法典 | `civil-code-contracts` | 当前覆盖合同编，不代表整部法典 |
+| 网安相关法律 | `cyber-data-law` | 网络安全、数据与个人信息 |
+| 劳动法 | `labor-social-security` | 劳动、人事及社会保障 |
+
+例如：“调用劳动法，分析这份解除劳动合同通知；先列事实缺口和证据，再核验适用法条。”
 
 ```text
 用 civil-code-contracts 审查这份服务合同：先列事实缺口，
@@ -104,7 +118,7 @@ flowchart LR
 | 效果 | 机制 | 当前边界 |
 |---|---|---|
 | 按问题查阅 | 入口索引、章节拆分、术语与速查 | 依赖助手遵循路由，不是独立搜索服务 |
-| 交叉分析 | 两技能互相引用 | 需要宿主可发现两个技能 |
+| 交叉分析 | 主题路由与技能联动 | 需要宿主可发现相关技能 |
 | 回查依据 | 章节及构建来源的 PDF 页码 | 原书未分发，其他版本页码可能不同 |
 | 避免把旧书当现行法 | 适用时点与官方核验指引 | 是工作流要求，不是自动更新数据库 |
 
@@ -112,17 +126,31 @@ flowchart LR
 
 ## 验证
 
-公开版检查包括文件完整性、相对链接、58篇章节/模块清单、公开文件哈希、隐私模式筛查、入口格式及已知注入模式扫描。原始安装版已在 Hermes 上确认发现与配套文件加载；公开版调整了技能标识和来源说明。
+公开版检查包括文件完整性、相对链接、88篇章节/模块清单、公开文件哈希、隐私模式筛查、入口格式及已知注入模式扫描。原始安装版已在 Hermes 上确认发现与配套文件加载；公开版调整了技能标识和来源说明。
 
 这些检查不等于逐字 OCR 校对或法律正确性认证。制作日志、安装记录、机器路径、账户凭据与原始提取文本均不分发。
 
 <a id="sources"></a>
 ## 来源与边界
 
+**书籍来源暗号：`Z-library`**
+
+以下书名、格式和大小为提供者指定的书目检索标记，原样列示；未核验平台条目或可下载性，不代表实际转换输入格式。三个技能均基于所提供的 PDF 副本构建，EPUB 的分页可能不同。
+
+| 对应技能 | 书籍名称 | 格式 | 标注大小 |
+|---|---|---|---|
+| 劳动法 | 中华人民共和国劳动和社会保障法律法规全书：含全部规章及法律解释：2022年版 | EPUB | 14.22MB |
+| 网安相关法律 | 网络安全法、数据安全法、个人信息保护法一本通 | EPUB | 603KB |
+| 民法典 | 中华人民共和国民法典合同编理解与适用 | PDF | 370.19MB |
+
+来源标记不附下载链接，也不构成版权或再分发许可声明。请核实所用副本的合法获取与使用范围。
+
+- 劳动社保全书：2022年版，2021年12月第8版，ISBN `978-7-5216-1794-8`；见[劳动法来源说明](skills/labor-social-security/sources.md)。
+
 - 《民法典合同编理解与适用》（书名简称）：人民法院出版社；后记署2020-07-15，具体版次未确认。见[合同来源说明](skills/civil-code-contracts/sources.md)。
 - 《网络安全法、数据安全法、个人信息保护法一本通》：2021年10月第1版，ISBN `978-7-5216-2233-1`。见[数据合规来源说明](skills/cyber-data-law/sources.md)。
 
-**仓库不上传或提供两本原书 PDF。** 请通过正规书店或图书馆取得合法版本。公开版采用书名与机构简称、省略国家名称；这不改变原规则的地域适用范围，也不表示规则跨法域通用。引用和实际应用前须确认完整名称、版本和适用法域。
+本仓库当前不提供原书文件或下载链接。除下列按要求保留的完整书名外，技能正文继续采用中性简称；这不改变规则的地域适用范围。引用和实际应用前须确认完整名称、版本和适用法域。
 
 保留旧版规则、解释争议与 OCR 疑点，不做全量现行法更新。实际事项须核验当时适用的法律、司法解释、施行废止和过渡安排；本资料不构成个案法律意见。
 
