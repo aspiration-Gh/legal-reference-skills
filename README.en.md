@@ -138,23 +138,10 @@ These checks do not certify exhaustive OCR accuracy or legal correctness. Intern
 
 **Book-source code: `Z-library`**
 
-The following titles, formats, and sizes are provider-supplied bibliographic search markers, reproduced as specified. Platform listings and availability have not been verified. They do not describe the actual conversion inputs: all three skills were built from supplied PDF copies, and EPUB pagination may differ.
-
 | Skill alias | Original title | Format | Listed size |
 |---|---|---|---|
 | 劳动法 | 中华人民共和国劳动和社会保障法律法规全书：含全部规章及法律解释：2022年版 | EPUB | 14.22MB |
 | 网安相关法律 | 网络安全法、数据安全法、个人信息保护法一本通 | EPUB | 603KB |
 | 民法典 | 中华人民共和国民法典合同编理解与适用 | PDF | 370.19MB |
 
-The marker includes no download link and makes no copyright or redistribution-license claim. Check lawful access and permitted use for any copy you obtain.
-
-- Employment and social-security reference: 2022 edition, eighth edition published in December 2021; ISBN `978-7-5216-1794-8`. See [employment-law sources](skills/labor-social-security/sources.md).
-
-- 《民法典合同编理解与适用》 (abbreviated title; a reference on the Civil Code contract provisions): People's Court Press; postscript dated 2020-07-15, exact edition unconfirmed. See [contract sources](skills/civil-code-contracts/sources.md).
-- 《网络安全法、数据安全法、个人信息保护法一本通》 (a reference on network security, data security, and personal information rules): first edition, October 2021; ISBN `978-7-5216-2233-1`. See [data-compliance sources](skills/cyber-data-law/sources.md).
-
-This repository currently provides no source-book files or download links. Full titles requested below are retained as bibliographic identifiers; skill bodies continue to use neutral abbreviations. This does not alter territorial scope or make the rules universally applicable. Confirm titles, editions, and jurisdiction before practical use.
-
-Historical rules, interpretive disagreements, and OCR uncertainties remain marked. This is not a comprehensive update to current law. For real matters, verify applicable legislation, judicial interpretations, effective dates, repeals, and transitional arrangements. The material is not individualized legal advice.
-
-Public availability does not grant a redistribution license for the books or third-party material. No additional open-source license is specified in this release. See [RIGHTS.md](RIGHTS.md).
+Book formats and sizes are listed as supplied. Source books and download links are not included. Use the skills as references and verify applicable law. See [RIGHTS.md](RIGHTS.md) for rights information.
