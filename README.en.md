@@ -2,7 +2,7 @@
 
 # Legal Reference Skills
 
-**Three on-demand skills for contracts, data compliance, and employment law**
+**Four on-demand skills for contracts, data compliance, employment law, and court filing practice**
 
 [简体中文](README.md) · English
 
@@ -10,7 +10,7 @@
 
 </div>
 
-Structured reading notes from three legal reference books: decision steps, conditions and exceptions, evidence prompts, source page references, and chapter navigation. Use them to frame a question, then verify the applicable official rules.
+Structured reading notes from three legal reference books plus one court-filing guidance pack: decision steps, conditions and exceptions, evidence prompts, source page references, and chapter navigation. Use them to frame a question, then verify the applicable official rules and the receiving court's current guidance.
 
 <a id="skills"></a>
 ## Skills
@@ -20,8 +20,9 @@ Structured reading notes from three legal reference books: decision steps, condi
 | [`civil-code-contracts`](skills/civil-code-contracts/SKILL.md) | Formation, validity, performance, termination, remedies, and specific contract types | Introduction plus 29 chapters: 30 files |
 | [`cyber-data-law`](skills/cyber-data-law/SKILL.md) | Network security, data processing, personal information, appendix rules, and cross-topic analysis | 28 modules |
 | [`labor-social-security`](skills/labor-social-security/SKILL.md) | Employment contracts, pay, working time, personnel disputes, insurance, and assistance | 30 modules |
+| [`court-filing-procedure`](skills/court-filing-procedure/SKILL.md) | Civil filing materials and counts, the six filing forms, mailing and deadlines, court fees and refunds, enforcement filing, preservation, and enforcement objections | 7 modules |
 
-Each skill contains `SKILL.md`, `chapters/`, `glossary.md`, `patterns.md`, `cheatsheet.md`, `sources.md`, and a public `coverage.json` inventory. The skills can be combined for data-processing agreements, outsourcing, recruitment, and employment questions.
+Each skill contains `SKILL.md`, `chapters/`, `glossary.md`, `patterns.md`, `cheatsheet.md`, `sources.md`, and a public `coverage.json` inventory. The first three are built from legal reference books and can be combined for data-processing agreements, outsourcing, recruitment, and employment questions; the fourth records a basic-level court's filing pack — **court procedure, not law** — so always verify the receiving court's current guidance.
 
 The skill bodies are written in Simplified Mandarin. Bilingual READMEs do not imply that all chapters have been translated.
 
@@ -30,7 +31,7 @@ The skill bodies are written in Simplified Mandarin. Bilingual READMEs do not im
 
 ### Hermes Agent
 
-Copy all three directories under `skills/` into the **active profile's** `${HERMES_HOME}/skills/law/`. If `HERMES_HOME` is unset, the default is `~/.hermes/skills/law/`. Back up or compare an existing skill with the same name before replacing it.
+Copy all four directories under `skills/` into the **active profile's** `${HERMES_HOME}/skills/law/`. If `HERMES_HOME` is unset, the default is `~/.hermes/skills/law/`. Back up or compare an existing skill with the same name before replacing it.
 
 ```text
 <HERMES_HOME>/skills/law/
@@ -40,7 +41,10 @@ Copy all three directories under `skills/` into the **active profile's** `${HERM
 ├── cyber-data-law/
 │   ├── SKILL.md
 │   └── ...
-└── labor-social-security/
+├── labor-social-security/
+│   ├── SKILL.md
+│   └── ...
+└── court-filing-procedure/
     ├── SKILL.md
     └── ...
 ```
@@ -57,13 +61,13 @@ from pathlib import Path
 source = Path('legal-reference-skills/skills')
 home = Path(os.environ.get('HERMES_HOME', str(Path.home() / '.hermes')))
 target = home / 'skills' / 'law'
-names = ('civil-code-contracts', 'cyber-data-law', 'labor-social-security')
+names = ('civil-code-contracts', 'cyber-data-law', 'labor-social-security', 'court-filing-procedure')
 for name in names:
     if (target / name).exists():
         raise SystemExit(f'Already exists: {target / name}')
 for name in names:
     shutil.copytree(source / name, target / name)
-print('Installed all three skills.')
+print('Installed all four skills.')
 PY
 ```
 
@@ -83,6 +87,7 @@ English identifiers remain stable. Use these natural-language aliases to request
 | 民法典 | `civil-code-contracts` | Contract provisions only, not the entire code |
 | 网安相关法律 | `cyber-data-law` | Network security, data, and personal information |
 | 劳动法 | `labor-social-security` | Employment, personnel, and social security |
+| 立案 | `court-filing-procedure` | Civil and enforcement filing at a basic-level court: steps, materials, and forms |
 
 Example: “调用劳动法 — analyze this termination notice, identify missing evidence, then verify the applicable rules.”
 
@@ -129,7 +134,7 @@ There is no background service, account binding, or API-key configuration. Offic
 
 ## Validation
 
-Public-copy checks cover file completeness, relative links, an inventory of 88 chapters/modules, public-file hashes, privacy-pattern screening, entry-point format, and known injection-pattern scanning. Discovery and supporting-file loading were verified for the original installed skills in Hermes; the public copy changes the identifiers and source documentation.
+Public-copy checks cover file completeness, relative links, an inventory of 95 chapters/modules, public-file hashes, privacy-pattern screening, entry-point format, and known injection-pattern scanning. Discovery and supporting-file loading were verified for the original installed skills in Hermes; the public copy changes the identifiers and source documentation.
 
 These checks do not certify exhaustive OCR accuracy or legal correctness. Internal production logs, installation records, machine paths, credentials, and extracted source texts are not distributed.
 
@@ -145,3 +150,5 @@ These checks do not certify exhaustive OCR accuracy or legal correctness. Intern
 | 民法典 | 中华人民共和国民法典合同编理解与适用 | PDF | 370.19MB |
 
 Book formats and sizes are listed as supplied. Source books and download links are not included. Use the skills as references and verify applicable law. See [RIGHTS.md](RIGHTS.md) for rights information.
+
+**Non-book source**: `court-filing-procedure` comes from a filing guidance pack (8 volumes, 2026 edition) prepared by a basic-level court for litigants. The public copy removes the court name, mailing address, phone numbers, internal contact list, and all case-specific data; court-specific figures are marked as examples and the "verify against the receiving court's current guidance" caveat is kept. It documents **court procedure, not law**.

@@ -1,0 +1,78 @@
+{
+  "skill": "court-filing-procedure",
+  "source_documents": 8,
+  "source_kind": "某基层人民法院《立案告知》材料包（2026年版，法院名称、地址、电话与个案数据已删除）",
+  "module_count": 7,
+  "companion_files": [
+    "cheatsheet.md",
+    "patterns.md",
+    "glossary.md",
+    "sources.md"
+  ],
+  "chapters": [
+    {
+      "id": "ch01",
+      "file": "chapters/ch01-materials.md",
+      "title": "民事立案材料清单与份数",
+      "source_sections": "02 民事立案/03 民事立案需提供的材料、01 请先阅读我、附件：特殊案由特殊材料一览表",
+      "source_kind": "court_guidance_pack",
+      "group": "filing_practice",
+      "sha256": "b8a1ae656ffca42ff8da1ba8a6e5d56fab7415894030ae932be592a33c0c1b1f"
+    },
+    {
+      "id": "ch02",
+      "file": "chapters/ch02-forms.md",
+      "title": "立案六张表格：打印规格与逐栏填写",
+      "source_sections": "02 民事立案/04～09 六张表格与“10 我该如何填写这六张表”样本",
+      "source_kind": "court_guidance_pack",
+      "group": "filing_practice",
+      "sha256": "b40c8fe9ae76efb686e035e619df5f403d75d2ff1186af566a88931476d70f20"
+    },
+    {
+      "id": "ch03",
+      "file": "chapters/ch03-mailing.md",
+      "title": "邮寄要求、时限、退回与补正",
+      "source_sections": "02 民事立案/11 邮寄材料、01 请先阅读我",
+      "source_kind": "court_guidance_pack",
+      "group": "filing_practice",
+      "sha256": "746035e074547b2c86bce75f44fdaf9ac426f34cf69962a853b8171f605575c4"
+    },
+    {
+      "id": "ch04",
+      "file": "chapters/ch04-fees.md",
+      "title": "诉讼费、交费、退费与票据",
+      "source_sections": "03 诉讼交费/01、02 交费完以后、05 诉讼退费",
+      "source_kind": "court_guidance_pack",
+      "group": "filing_practice",
+      "sha256": "d7ef30e93eeb6166e65eea6a9baf66b27b90a7e66a9142c4e90066b629754e5c"
+    },
+    {
+      "id": "ch05",
+      "file": "chapters/ch05-flow.md",
+      "title": "程序地图：网上立案到开庭",
+      "source_sections": "02 民事立案/06 诉讼事项告知书、03 诉讼交费/02",
+      "source_kind": "court_guidance_pack",
+      "group": "filing_practice",
+      "sha256": "422aebaf0c1b2c6a48839b5151cbbf528390453d5d2212fb9b9ec205af88e9a5"
+    },
+    {
+      "id": "ch06",
+      "file": "chapters/ch06-execution.md",
+      "title": "执行立案：材料、保全声明、移送执行书",
+      "source_sections": "04 执行立案/01、01-2、02、10 立案后",
+      "source_kind": "court_guidance_pack",
+      "group": "filing_practice",
+      "sha256": "0f75178f6d49cd7ba4392cec81c2d206d7f38722a1c06e976a5dc21f2899c665"
+    },
+    {
+      "id": "ch07",
+      "file": "chapters/ch07-extras.md",
+      "title": "保全、上诉撤诉、执行异议与其他",
+      "source_sections": "06 保全、07 执行异议与执行异议之诉、08 上诉撤诉",
+      "source_kind": "court_guidance_pack",
+      "group": "filing_practice",
+      "sha256": "8dd10239b28ecc4cc5ee8a198efd7304f126f5663e3c5e728197414c7b0a713b"
+    }
+  ],
+  "scope": "公开版记录法院操作流程，不是法律数据库，也不代替受理法院当期告知；表格模板与原始材料包不随仓库分发。"
+}

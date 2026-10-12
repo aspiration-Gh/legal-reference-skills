@@ -2,7 +2,7 @@
 
 # Legal Reference Skills
 
-**面向合同审查、数据合规与劳动社保的三个按需加载技能**
+**面向合同审查、数据合规、劳动社保与法院立案实务的四个按需加载技能**
 
 简体中文 · [English](README.en.md)
 
@@ -10,18 +10,19 @@
 
 </div>
 
-将三部法律参考书整理成可供智能助手按问题查阅的知识结构：判断步骤、条件与例外、证据提示、来源页码和章节索引。适合先建立分析框架，再核验适用的官方法条。
+将三部法律参考书与一份基层法院立案告知材料包整理成可供智能助手按问题查阅的知识结构：判断步骤、条件与例外、证据提示、来源页码和章节索引。适合先建立分析框架，再核验适用的官方法条与受理法院当期告知。
 
 <a id="skills"></a>
-## 三个技能
+## 四个技能
 
 | 技能 | 内容 | 结构 |
 |---|---|---|
 | [`civil-code-contracts`](skills/civil-code-contracts/SKILL.md) | 合同订立与效力、履行、解除、违约救济及典型合同 | 绪论＋29章，共30篇 |
 | [`cyber-data-law`](skills/cyber-data-law/SKILL.md) | 网络安全、数据处理、个人信息、附录规则与交叉分析 | 28个模块 |
 | [`labor-social-security`](skills/labor-social-security/SKILL.md) | 劳动合同、工资工时、人事争议、社会保险与救助 | 30个模块 |
+| [`court-filing-procedure`](skills/court-filing-procedure/SKILL.md) | 民事立案材料与份数、立案六张表格、邮寄与时限、诉讼费与退费、执行立案、保全与执行异议 | 7个模块 |
 
-每个技能均包含 `SKILL.md`、`chapters/`、`glossary.md`、`patterns.md`、`cheatsheet.md`、`sources.md` 和公开覆盖清单 `coverage.json`。三个技能可在数据处理协议、技术外包、招聘与用工等场景下联合使用。
+每个技能均包含 `SKILL.md`、`chapters/`、`glossary.md`、`patterns.md`、`cheatsheet.md`、`sources.md` 和公开覆盖清单 `coverage.json`。前三个技能来自法律参考书，可在数据处理协议、技术外包、招聘与用工等场景下联合使用；第四个技能来自一所基层人民法院的立案告知材料包，记录当事人办立案、交费、执行的手续与表单要求（**法院操作流程，不是法律**，使用时须先核验受理法院当期告知）。
 
 正文以中文编写；双语 README 不代表全部技能正文已经翻译。
 
@@ -30,7 +31,7 @@
 
 ### Hermes Agent
 
-将 `skills/` 中的三个目录复制到**当前配置档**的 `${HERMES_HOME}/skills/law/` 下。若未设置 `HERMES_HOME`，默认路径为 `~/.hermes/skills/law/`。遇到同名技能先备份或比较，不直接覆盖。
+将 `skills/` 中的四个目录复制到**当前配置档**的 `${HERMES_HOME}/skills/law/` 下。若未设置 `HERMES_HOME`，默认路径为 `~/.hermes/skills/law/`。遇到同名技能先备份或比较，不直接覆盖。
 
 ```text
 <HERMES_HOME>/skills/law/
@@ -40,7 +41,10 @@
 ├── cyber-data-law/
 │   ├── SKILL.md
 │   └── ...
-└── labor-social-security/
+├── labor-social-security/
+│   ├── SKILL.md
+│   └── ...
+└── court-filing-procedure/
     ├── SKILL.md
     └── ...
 ```
@@ -57,13 +61,13 @@ from pathlib import Path
 source = Path('legal-reference-skills/skills')
 home = Path(os.environ.get('HERMES_HOME', str(Path.home() / '.hermes')))
 target = home / 'skills' / 'law'
-names = ('civil-code-contracts', 'cyber-data-law', 'labor-social-security')
+names = ('civil-code-contracts', 'cyber-data-law', 'labor-social-security', 'court-filing-procedure')
 for name in names:
     if (target / name).exists():
         raise SystemExit(f'Already exists: {target / name}')
 for name in names:
     shutil.copytree(source / name, target / name)
-print('Installed all three skills.')
+print('Installed all four skills.')
 PY
 ```
 
@@ -83,6 +87,7 @@ Windows 也可通过文件管理器完成复制。新会话中让助手列出 `l
 | 民法典 | `civil-code-contracts` | 当前覆盖合同编，不代表整部法典 |
 | 网安相关法律 | `cyber-data-law` | 网络安全、数据与个人信息 |
 | 劳动法 | `labor-social-security` | 劳动、人事及社会保障 |
+| 立案 | `court-filing-procedure` | 基层法院民事、执行立案的流程、材料与表格 |
 
 例如：“调用劳动法，分析这份解除劳动合同通知；先列事实缺口和证据，再核验适用法条。”
 
@@ -126,7 +131,7 @@ flowchart LR
 
 ## 验证
 
-公开版检查包括文件完整性、相对链接、88篇章节/模块清单、公开文件哈希、隐私模式筛查、入口格式及已知注入模式扫描。原始安装版已在 Hermes 上确认发现与配套文件加载；公开版调整了技能标识和来源说明。
+公开版检查包括文件完整性、相对链接、95篇章节/模块清单、公开文件哈希、隐私模式筛查、入口格式及已知注入模式扫描。原始安装版已在 Hermes 上确认发现与配套文件加载；公开版调整了技能标识和来源说明。
 
 这些检查不等于逐字 OCR 校对或法律正确性认证。制作日志、安装记录、机器路径、账户凭据与原始提取文本均不分发。
 
@@ -142,3 +147,5 @@ flowchart LR
 | 民法典 | 中华人民共和国民法典合同编理解与适用 | PDF | 370.19MB |
 
 书目规格按提供信息标注；仓库不提供原书或下载链接。技能供参考，实际使用请核验适用法条。权利说明见 [RIGHTS.md](RIGHTS.md)。
+
+**非书籍来源**：`court-filing-procedure` 来自一所基层人民法院面向当事人编写的《立案告知》材料包（2026 年版，8 册）。公开版已删除法院名称、收件地址、联系电话、内部部门联系人表及一切个案数据，法院特有数字一律标注为“示例”，并保留“以受理法院当期告知为准”的提示。该技能记录的是**法院操作流程**，不是法律，也不代替法条核验。
